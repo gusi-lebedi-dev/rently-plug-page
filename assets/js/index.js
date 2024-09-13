@@ -1,6 +1,8 @@
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const textElements = document.querySelectorAll('.description span');
-    const texts = ['ТАРИФОВ', 'ГРАФИКА АРЕНДЫ','РАСХОДОВ', 'АНАЛИТИКИ'];
+    const texts = ['ТАРИФОВ', 'ГРАФИКА АРЕНДЫ', 'РАСХОДОВ', 'АНАЛИТИКИ'];
     let currentTextIndex = 0;
     let currentLetterIndex = 0;
     let isDeleting = false;
@@ -35,4 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     typeText();
 })
+
+function openModal() {
+    const form = document.querySelector('.form-request');
+    form.classList.toggle('open')
+}
+
+
+
+
 
