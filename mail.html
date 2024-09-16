@@ -66,28 +66,44 @@
                 line-height: 12px !important;
             }
         }
+        .red-line {
+            width: 65%;
+            background: #D52B1E;
+            border-top-right-radius: 8px;
+        }
+        .blue-line {
+            width: 35%;
+            background: #0039A6;
+            border-top-left-radius: 8px;
+        }
+        .table-spacing {
+            width: 2%;
+        }
+        @media screen and (max-width: 500px) {
+            .table-spacing {
+                width: 6%;
+            }
+        }
     </style>
 </head>
 <body>
 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mail">
     <tr>
         <td>
-            <!-- Красная линия -->
             <table width="100%" cellspacing="0" cellpadding="0">
                 <tr>
                     <td style="background-color: #D52B1E; height: 12px;"></td>
                 </tr>
             </table>
 
-            <!-- Основное содержимое -->
             <table width="100%" cellspacing="0" cellpadding="0" class="mail-content" style="padding: 20px;">
                 <tr>
                     <td>
-                        <h1 style="font-size: 24px; line-height: 30px;">Дубровский Иван Иванович</h1>
+                        <h1 style="font-size: 24px; line-height: 30px; margin: 0">Дубровский Иван Иванович</h1>
                         <p style="font-size: 12px; line-height: 16px; font-weight: 500;">Генеральный директор</p>
-
+                    </td>
+                    <td>
                         <div class="contacts">
-                            <!-- Контакты -->
                             <div class="contacts-item">
                                 <img src="https://gusi-lebedi-dev.github.io/rently-plug-page/assets/img/mail/tel.png" alt="">
                                 <a href="#">+7 985 277-77-74</a>
@@ -105,23 +121,26 @@
                 </tr>
             </table>
 
-            <!-- Футер -->
-            <table width="100%" cellspacing="0" cellpadding="0" class="mail-footer" style="padding: 0 20px 14px;">
+            <table>
                 <tr>
-                    <td style="font-size: 10px; line-height: 14px; color: #6f6f6f; font-style: italic; font-weight: 600;">
-                        “РЕНТЛИ - ФОРМУЛА-1 В УПРАВЛЕНИИ АВТОПАРКОМ“
-                    </td>
-                    <td class="logo-mail" align="right">
-                        <img src="https://gusi-lebedi-dev.github.io/rently-plug-page/assets/img/mail/logo-mail.png" alt="">
+                    <td style="padding:0 20px 8px;font-size: 10px; line-height: 14px; color: #6f6f6f; font-style: italic; font-weight: 600;">
+                        <span>  “РЕНТЛИ - ФОРМУЛА-1 В УПРАВЛЕНИИ АВТОПАРКОМ“</span>
                     </td>
                 </tr>
             </table>
 
-            <!-- Лого для мобильных -->
-            <table width="100%" cellspacing="0" cellpadding="0">
+            <table width="100%" cellspacing="0" cellpadding="0" class="mail-footer" >
                 <tr>
-                    <td align="left" style="padding-left:20px;">
-                        <img class="mobile-logo" src="https://gusi-lebedi-dev.github.io/rently-plug-page/assets/img/mail/logo-mail.png" alt="" style="display: none; margin-top: 4px;">
+                    <td class="red-line">
+
+                    </td>
+                    <td class="table-spacing"></td>
+                    <td>
+                        <img src="assets/img/mail/logo-mail.png" alt="">
+                    </td>
+                    <td class="table-spacing"></td>
+                    <td class="blue-line">
+
                     </td>
                 </tr>
             </table>
